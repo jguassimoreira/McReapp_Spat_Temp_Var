@@ -1,0 +1,201 @@
+
+ Program:                       HLM 7 Hierarchical Linear and Nonlinear Modeling
+ Authors:                       Stephen Raudenbush, Tony Bryk, & Richard Congdon
+ Publisher:                     Scientific Software International, Inc. (c) 2000
+                                                      techsupport@ssicentral.com
+                                                              www.ssicentral.com
+ -------------------------------------------------------------------------------
+ Module:      HLM2.EXE (7.00.21106.30001)
+ Date:        3 July 2018, Tuesday
+ Time:        11:43:31
+ -------------------------------------------------------------------------------
+
+
+ Specifications for this HLM2 run
+
+
+  Problem Title: mod0
+
+  The data source for this run  = tempVar_gmCont
+  The command file for this run = C:\Users\JGUASS~1\AppData\Local\Temp\whlmtemp.hlm
+  Output file name              = C:\Users\jguassimoreira\Desktop\TempVar_gmCont\mod0.txt
+  The maximum number of level-1 units = 2240
+  The maximum number of level-2 units = 70
+  The maximum number of iterations = 100
+
+  Method of estimation: restricted maximum likelihood
+
+  The outcome variable is       SD    
+
+
+ Summary of the model specified (in hierarchical format)
+ ---------------------------------------------------
+
+Level-1 Model
+
+	SD = B1*(LDLPFC) + B2*(RDLPFC) + B3*(RVLPFC) + B4*(RDMPFC) + B5*(LMTG) + B6*(LSPL) + B7*(RSPL) + r
+
+Level-2 Model
+	B1 = G10 + G11*(CAGE) + G12*(FAR) + u1
+	B2 = G20 + G21*(CAGE) + G22*(FAR) + u2
+	B3 = G30 + G31*(CAGE) + G32*(FAR) + u3
+	B4 = G40 + G41*(CAGE) + G42*(FAR) + u4
+	B5 = G50 + G51*(CAGE) + G52*(FAR) + u5
+	B6 = G60 + G61*(CAGE) + G62*(FAR) + u6
+	B7 = G70 + G71*(CAGE) + G72*(FAR) + u7
+
+FAR has been centered around the grand mean.
+
+
+Mixed Model
+    SD = G10*LDLPFC + G11*CAGE*LDLPFC + G12*FAR*LDLPFC 
+    + G20*RDLPFC + G21*CAGE*RDLPFC + G22*FAR*RDLPFC 
+    + G30*RVLPFC + G31*CAGE*RVLPFC + G32*FAR*RVLPFC 
+    + G40*RDMPFC + G41*CAGE*RDMPFC + G42*FAR*RDMPFC 
+    + G50*LMTG + G51*CAGE*LMTG + G52*FAR*LMTG 
+    + G60*LSPL + G61*CAGE*LSPL + G62*FAR*LSPL 
+    + G70*RSPL + G71*CAGE*RSPL + G72*FAR*RSPL 
+     + u1 + u2*RDLPFC  + u3*RVLPFC  + u4*RDMPFC 
+     + u5*LMTG  + u6*LSPL  + u7*RSPL + r
+
+Iterations stopped due to small change in likelihood function
+******* ITERATION 1449 *******
+
+
+ sigma^2 =      0.01357
+
+tau
+   LDLPFC,B1      0.00570       0.00515       0.00338       0.00495       0.00508       0.00484       0.00547 
+   RDLPFC,B2      0.00515       0.01219       0.00176       0.00594       0.00480       0.00586       0.00698 
+   RVLPFC,B3      0.00338       0.00176       0.00776       0.00349       0.00263       0.00253       0.00552 
+   RDMPFC,B4      0.00495       0.00594       0.00349       0.00643       0.00440       0.00447       0.00542 
+     LMTG,B5      0.00508       0.00480       0.00263       0.00440       0.00464       0.00402       0.00447 
+     LSPL,B6      0.00484       0.00586       0.00253       0.00447       0.00402       0.00651       0.00620 
+     RSPL,B7      0.00547       0.00698       0.00552       0.00542       0.00447       0.00620       0.00927 
+
+   LDLPFC,B1      0.00570       0.00515       0.00338       0.00495       0.00508       0.00484       0.00547 
+   RDLPFC,B2      0.00515       0.01219       0.00176       0.00594       0.00480       0.00586       0.00698 
+   RVLPFC,B3      0.00338       0.00176       0.00776       0.00349       0.00263       0.00253       0.00552 
+   RDMPFC,B4      0.00495       0.00594       0.00349       0.00643       0.00440       0.00447       0.00542 
+     LMTG,B5      0.00508       0.00480       0.00263       0.00440       0.00464       0.00402       0.00447 
+     LSPL,B6      0.00484       0.00586       0.00253       0.00447       0.00402       0.00651       0.00620 
+     RSPL,B7      0.00547       0.00698       0.00552       0.00542       0.00447       0.00620       0.00927 
+
+tau (as correlations)
+   LDLPFC,B1  1.000  0.617  0.509  0.817  0.988  0.794  0.753
+   RDLPFC,B2  0.617  1.000  0.181  0.671  0.639  0.658  0.657
+   RVLPFC,B3  0.509  0.181  1.000  0.494  0.438  0.357  0.651
+   RDMPFC,B4  0.817  0.671  0.494  1.000  0.805  0.691  0.703
+     LMTG,B5  0.988  0.639  0.438  0.805  1.000  0.732  0.681
+     LSPL,B6  0.794  0.658  0.357  0.691  0.732  1.000  0.798
+     RSPL,B7  0.753  0.657  0.651  0.703  0.681  0.798  1.000
+
+ ----------------------------------------------------
+  Random level-1 coefficient   Reliability estimate
+ ----------------------------------------------------
+    LDLPFC, G1                        0.746
+    RDLPFC, G2                        0.782
+    RVLPFC, G3                        0.632
+    RDMPFC, G4                        0.768
+      LMTG, G5                        0.406
+      LSPL, G6                        0.706
+      RSPL, G7                        0.732
+ ----------------------------------------------------
+The value of the log-likelihood function at iteration 1449 = 1.368489E+003
+ The outcome variable is       SD
+
+ Final estimation of fixed effects:
+ ----------------------------------------------------------------------------
+                                       Standard             Approx.
+    Fixed Effect         Coefficient   Error      T-ratio   d.f.     P-value
+ ----------------------------------------------------------------------------
+ For   LDLPFC slope, B1
+    INTRCPT2, G10           0.434963   0.010447    41.636        67    0.000
+        CAGE, G11          -0.002491   0.004072    -0.612        67    0.543
+         FAR, G12           0.031488   0.021145     1.489        67    0.141
+ For   RDLPFC slope, B2
+    INTRCPT2, G20           0.567430   0.014919    38.033        67    0.000
+        CAGE, G21          -0.006179   0.005816    -1.062        67    0.292
+         FAR, G22          -0.010078   0.030197    -0.334        67    0.740
+ For   RVLPFC slope, B3
+    INTRCPT2, G30           0.455803   0.013247    34.408        67    0.000
+        CAGE, G31          -0.008843   0.005164    -1.713        67    0.091
+         FAR, G32           0.041447   0.026812     1.546        67    0.127
+ For   RDMPFC slope, B4
+    INTRCPT2, G40           0.528560   0.010932    48.351        67    0.000
+        CAGE, G41          -0.010296   0.004261    -2.416        67    0.018
+         FAR, G42           0.032382   0.022126     1.464        67    0.148
+ For     LMTG slope, B5
+    INTRCPT2, G50           0.439428   0.012775    34.398        67    0.000
+        CAGE, G51          -0.006901   0.004980    -1.386        67    0.170
+         FAR, G52           0.033934   0.025857     1.312        67    0.194
+ For     LSPL slope, B6
+    INTRCPT2, G60           0.541727   0.011477    47.200        67    0.000
+        CAGE, G61           0.001083   0.004474     0.242        67    0.809
+         FAR, G62           0.027756   0.023230     1.195        67    0.236
+ For     RSPL slope, B7
+    INTRCPT2, G70           0.534049   0.013449    39.708        67    0.000
+        CAGE, G71          -0.006186   0.005243    -1.180        67    0.242
+         FAR, G72           0.015608   0.027222     0.573        67    0.568
+ ----------------------------------------------------------------------------
+
+ The outcome variable is       SD
+
+ Final estimation of fixed effects
+ (with robust standard errors)
+ ----------------------------------------------------------------------------
+                                       Standard             Approx.
+    Fixed Effect         Coefficient   Error      T-ratio   d.f.     P-value
+ ----------------------------------------------------------------------------
+ For   LDLPFC slope, B1
+    INTRCPT2, G10           0.434963   0.010114    43.005        67    0.000
+        CAGE, G11          -0.002491   0.003282    -0.759        67    0.450
+         FAR, G12           0.031488   0.019248     1.636        67    0.107
+ For   RDLPFC slope, B2
+    INTRCPT2, G20           0.567430   0.014595    38.878        67    0.000
+        CAGE, G21          -0.006179   0.005675    -1.089        67    0.280
+         FAR, G22          -0.010078   0.025663    -0.393        67    0.696
+ For   RVLPFC slope, B3
+    INTRCPT2, G30           0.455803   0.012959    35.172        67    0.000
+        CAGE, G31          -0.008843   0.005187    -1.705        67    0.093
+         FAR, G32           0.041447   0.028609     1.449        67    0.152
+ For   RDMPFC slope, B4
+    INTRCPT2, G40           0.528560   0.010695    49.421        67    0.000
+        CAGE, G41          -0.010296   0.003519    -2.926        67    0.005
+         FAR, G42           0.032382   0.022694     1.427        67    0.158
+ For     LMTG slope, B5
+    INTRCPT2, G50           0.439428   0.011450    38.379        67    0.000
+        CAGE, G51          -0.006901   0.003870    -1.783        67    0.079
+         FAR, G52           0.033934   0.022269     1.524        67    0.132
+ For     LSPL slope, B6
+    INTRCPT2, G60           0.541727   0.011226    48.257        67    0.000
+        CAGE, G61           0.001083   0.004298     0.252        67    0.802
+         FAR, G62           0.027756   0.023529     1.180        67    0.242
+ For     RSPL slope, B7
+    INTRCPT2, G70           0.534049   0.013157    40.591        67    0.000
+        CAGE, G71          -0.006186   0.005242    -1.180        67    0.242
+         FAR, G72           0.015608   0.030583     0.510        67    0.611
+ ----------------------------------------------------------------------------
+
+
+
+ Final estimation of variance components:
+ -----------------------------------------------------------------------------
+ Random Effect           Standard      Variance     df    Chi-square  P-value
+                         Deviation     Component
+ -----------------------------------------------------------------------------
+   LDLPFC slope, u1        0.07550       0.00570    67     258.52411    0.000
+   RDLPFC slope, u2        0.11040       0.01219    67     307.62530    0.000
+   RVLPFC slope, u3        0.08809       0.00776    67     181.90611    0.000
+   RDMPFC slope, u4        0.08016       0.00643    67     289.06782    0.000
+     LMTG slope, u5        0.06810       0.00464    67      94.65922    0.015
+     LSPL slope, u6        0.08066       0.00651    67     227.49278    0.000
+     RSPL slope, u7        0.09627       0.00927    67     249.97644    0.000
+  level-1,       r         0.11650       0.01357
+ -----------------------------------------------------------------------------
+
+
+ Statistics for current covariance components model
+ --------------------------------------------------
+ Deviance                       = -2736.978749
+ Number of estimated parameters = 29

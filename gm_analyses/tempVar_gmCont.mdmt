@@ -1,0 +1,31 @@
+#HLM2 MDM CREATION TEMPLATE
+mdmtype:0
+rawdattype:spss
+l1fname:C:\Users\jguassimoreira\Desktop\TempVar_gmCont\varMeasureModFar_gmCont.sav
+l2fname:C:\Users\jguassimoreira\Desktop\TempVar_gmCont\varMeasureModFar_gmCont2.sav
+l1missing:n
+timeofdeletion:now
+mdmname:tempVar_gmCont
+*begin l1vars
+level2id:ID
+SD
+LDLPFC
+RDLPFC
+RVLPFC
+RDMPFC
+LMTG
+LSPL
+RSPL
+*end l1vars
+*begin l2vars
+level2id:ID
+LDLPFCGM
+LMTGGM
+LSPLGM
+RDLPFCGM
+RDMPFCGM
+RSPLGM
+RVLPFCGM
+CAGE
+FAR
+*end l2vars
