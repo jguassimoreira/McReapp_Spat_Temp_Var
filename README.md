@@ -1,1 +1,1 @@
-# McReapp_Spat_Temp_Var
+# This repo contains the code for Guassi Moreira, McLaughlin, & Silvers (under review). Spatial and Temporal Cortical Variability Track with Age and Affective Experience During Emotion Regulation in Youth
