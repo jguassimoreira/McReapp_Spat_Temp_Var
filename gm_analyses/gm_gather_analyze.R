@@ -37,7 +37,7 @@ for (i in 1:length(subs)) {
 }
 
 #Write output to .csv file
-write.table(outGM, file="C:/Users/blinded/gm_spheres_all.csv", col.names = FALSE, row.names = FALSE)
+write.table(outGM, file="C:/Users/jguas/Desktop/McReapp_gm/gm_spheres_all.csv", col.names = FALSE, row.names = FALSE)
 
 #import lme4
 library(lme4)
@@ -45,7 +45,7 @@ library(lmerTest)
 
 #gmML.csv should also be on github. was creating by taking data from output
 #above and combinging with estimates of spatial/temporal var (located elsewhere, on OSF)
-dat = read.csv("C:/Users/blinded/gmML.csv")
+dat = read.csv("C:/Users/jguas/Desktop/McReapp_gm/gmML.csv")
 
 #Allow random, between-subject error terms for intercepts and error terms
 modGini <- lmer(Gini ~ GM + (1+GM|ID), data=dat, REML = FALSE)
