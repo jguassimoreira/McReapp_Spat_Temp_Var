@@ -2,7 +2,7 @@ library(readxl)
 
 ##This script gathers the gray matter composition data for each subject,
 ##saves it to a .csv, then runs the a random coefficient regression 
-##to examine the relationship between gray matter composotion and
+##to examine the relationship between gray matter composition and
 ##our indices of variability (spatial & temporal)
 
 
