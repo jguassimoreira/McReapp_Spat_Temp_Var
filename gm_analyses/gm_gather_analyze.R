@@ -18,13 +18,15 @@ subs = c(1001, 1002, 1005, 1006, 1007, 1008, 1031, 1032, 1034, 1036,
 
 #List all 32 spheres (nested under 7 ROIs)
 
-ROIs = c("ldlPFC_A", "ldlPFC_B", "ldlPFC_C", "ldlPFC_D", "ldlPFC_E", 
-  "ldlPFC_F", "ldlPFC_G", "rdlPFC_A", "rdlPFC_B", "rdlPFC_C",
-  "rdlPFC_D", "rvlPFC_A", "rvlPFC_B", "rvlPFC_C", "rdmPFC_A", 
-  "rdmPFC_B", "rdmPFC_C", "rdmPFC_D", "rdmPFC_E", "rdmPFC_F", 
-  "rdmPFC_G", "lMTG_A", "lMTG_B", "lSPL_A", "lSPL_B", 
-  "lSPL_C", "lSPL_D", "lSPL_E", "rSPL_A", "rSPL_B", "rSPL_C", 
-  "rSPL_D")
+#ROIs = c("ldlPFC_A", "ldlPFC_B", "ldlPFC_C", "ldlPFC_D", "ldlPFC_E", 
+#  "ldlPFC_F", "ldlPFC_G", "rdlPFC_A", "rdlPFC_B", "rdlPFC_C",
+#  "rdlPFC_D", "rvlPFC_A", "rvlPFC_B", "rvlPFC_C", "rdmPFC_A", 
+#  "rdmPFC_B", "rdmPFC_C", "rdmPFC_D", "rdmPFC_E", "rdmPFC_F", 
+#  "rdmPFC_G", "lMTG_A", "lMTG_B", "lSPL_A", "lSPL_B", 
+#  "lSPL_C", "lSPL_D", "lSPL_E", "rSPL_A", "rSPL_B", "rSPL_C", 
+#  "rSPL_D")
+#Those labels aren't actually used for anything here. Just meant to be a reminder of what the spheres are.
+
 
 #create empty vector to store data
 outGM = c()
